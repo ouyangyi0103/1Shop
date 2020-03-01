@@ -1,0 +1,13 @@
+.main{
+    width: 1070px;
+    margin: auto;
+}
+.nav_top{
+width: 100%;
+height: 30px;
+background-color: aqua;
+}
+.nav_center{
+    height: 30px;
+    background-color: azure;
+}
