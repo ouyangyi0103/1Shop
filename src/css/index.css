@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    height: 8000px;
+}
 .main{
     width: 1070px;
     margin: 0 auto;
@@ -152,13 +155,13 @@ border-bottom: 1px solid #e5e5e5;
     border: none;
 }
 .car{
+    display: block;
     width: 122px;
     height: 38px;
     text-align: center;
     line-height: 44px;
     border: 1px solid gray;
     border-radius: 20px;
-    margin-left: 17px;
     font-size: 18px;
     line-height: 38px;
     text-decoration:none;
@@ -215,20 +218,40 @@ border-bottom: 1px solid #e5e5e5;
     height: 410px;
     border:2px solid orangered;
     position: absolute;
-    top: 208px;
+    top: 209px;
     vertical-align: middle;
-    /* display: none; */
+    display: none;
 }
-.all_hide li{
-    width: 177px;
-    height: 370px;
+.all_hide ul{
+    width: 100%;
+    padding: 20px 0;
+}
+.all_hide ul li{
+    width: 157px;
+    height: 185px;
+    padding-left: 20px;
     border-right: 1px solid gray;
     float: left;
-    list-style: none;
-    margin: 18px 0;
-    padding-left: 15px;
 }
-.all_hide li:last-child{
+.all_hide ul li p{
+    font-size: 14px;
+    color: #000;
+    font-weight: 900;
+}
+.all_hide ul li:nth-child(6){
     border: none;
+}
+.all_hide ul li:nth-child(12){
+    border: none;
+}
+.all_hide ul li ol li{
+    border: none;
+    padding: 0px;
+    width: 78px;
+    height: 24px;
+    float: left;
+    color: gray;
+    font-size: 13px;
+    margin-top: 3px;
 }
 /*导航底部结束*/
