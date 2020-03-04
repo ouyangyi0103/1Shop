@@ -97,11 +97,11 @@ const serverHandler = () => {
             proxies: [
                 // 每一个代理配置就是一个对象
                 {
-                    source: '/gx', // 源, 你的代理标识符
-                    target: 'http://127.0.0.1/oyy.php' // 目标, 你要代理的地址
-                },{
-                    source: '/gx2', // 源, 你的代理标识符  可以配置多个代理
-                    target: 'http://127.0.0.1/xxx.php' // 目标, 你要代理的地址
+                    source: '/yhd', // 源, 你的代理标识符
+                    target: 'https://www.yhd.com/homepage/ajaxIndexQianggou.do' // 目标, 你要代理的地址
+                }, {
+                    source: '/xhr', // 源, 你的代理标识符  可以配置多个代理
+                    target: 'https://www.xxx.com' // 目标, 你要代理的地址
                 }
             ]
         }))

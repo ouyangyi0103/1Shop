@@ -54,5 +54,5 @@ function animate(oEle, json, fn) {
 				fn();
 			}
 		}
-	}, 30)
+	},30)
 }
