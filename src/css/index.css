@@ -335,7 +335,7 @@ border-bottom: 1px solid #e5e5e5;
     width: 100%;
     height: 60px;
     background-color: white;
-    /* display: none; */
+    display: none;
 }
 .search_hide_center img{
     width: 160px;
@@ -393,6 +393,7 @@ border-bottom: 1px solid #e5e5e5;
     margin-right: 10px;
 }
 /*隐藏搜索栏结束*/
+
 /*超级单品开始*/
 .super_box{
     width: 100%;
@@ -412,27 +413,176 @@ border-bottom: 1px solid #e5e5e5;
     position: absolute;
     top: 10px;
 }
-.right_position{
+.super_list ul li, .single_one{
+    width: 210px;
+    height: 216px;
+    float: left;
+    cursor: pointer;
+}
+.super_list ul li{
+    background-color: rgba(0, 0, 0, 0.01);
+}
+.super_list ul li:hover{
+    transform: scale(1.05);
+    background-color: white;
+}
+.super_list ul li p:nth-child(1){
+    width: 210px;
+    height: 135px;
+}
+.super_list ul li p:nth-child(2){
+    width: 150px;
+    height: 50px;
+    margin: 0 30px;
+}
+.price_m{
+    height: 31px;
+}
+.price_m span{
+    display: block;
+    float: left;
+}
+.price_m span:nth-child(1){
+    color: red;
+    margin-left: 65px;
+}
+.price_m span:nth-child(2){
+    color: red;
+}
+.price_m span:nth-child(3){
+    color: gray;
+    font-size: 13px;
+    margin-top: 3px;
+    text-decoration: line-through;
+}
+.price_m span:nth-child(4){
+    color: gray;
+    font-size: 13px;
+    margin-top: 3px;
+    text-decoration: line-through;
+}
+.price_lfet{
+    background-color: violet;
+
+}
+.price_right{
+    background-color: tomato;
+}
+.super_list ul li p:nth-child(2) span{
+    display: block;
+    width: 150px;
+    height: 20px;
+}
+.super_list ul li p:nth-child(2) i{
+    display: block;
+    width: 150px;
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.super_list ul li p:nth-child(2) i span{
+    display: block;
+    width: 29%;
+    height: 6px;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 34, 0.801);
+}
+.super_list ul li p img{
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.super_list ul .single_one{
+    background-color: red;
+}
+.super_list ul .single_one a img{
+    width: 129px;
+    height: 36px;
+    display: block;
+    margin: 22px 0 0 20px;
+}
+.single_text{
+    width: 180px;
+    height: 40px;
+}
+.sing_text_font{
+    display: block;
+    width: 130px;
+    height: 22px;
+    font-size: 14px;
+    color: ivory;
+    font-weight: 900;
+    margin-left: 22px;
+}
+.single_text_line{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    margin-left: 22px;
+}
+.count_down{
+    width: 186px;
+    height: 86px;
+    margin-left: 22px;
+}
+.count_down p{
+    color: yellow;
+    font-size: 20px;
+}
+.timer{
+    margin-top: 10px;
+}
+.timer p{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: #000;
+    float: left;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    font-weight: 800;
+}
+.timer span{
+    display: block;
+    font-size: 20px;
+    width: 20px;
+    height: 35px;
+    color: white;
+    line-height: 35px;
+    float: left;
+    text-align: center;
+    font-weight: 900;
+}
+.QR_code{
     width: 100px;
     height: 175px;
     cursor: pointer;
-    position: fixed;
-    top: 30px;
-    left: 120px;
     background-color: white;
+    position: absolute;
+    right: 120px;
+    top: 0;
 }
-.right_position p{
+.QR_code.active {
+    position: fixed;
+    top: 156px;
+}
+.QR_code p{
     height: 30px;
     text-align: center;
     line-height: 30px;
 }
-.right_position img:nth-child(2){
+.QR_code img:nth-child(2){
     width: 76px;
     height: 76px;
     display: block;
     margin-left: 10px;
 }
-.right_position img:nth-child(3){
+.QR_code img:nth-child(3){
     height: 28px;
     display: block;
 }

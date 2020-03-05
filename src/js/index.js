@@ -82,13 +82,46 @@ $(function () {
 	}
 	//轮播图结束
 
-	//超级单品开始
-	$.ajax({
-		url: '../lib/json/super_list.json',
-		dataType:'json',
-		success: function (res) {
-			console.log(res)
+	//固定导航栏开始
+	$(window).scroll(() => {
+		if ($(window).scrollTop() >= 759) {
+			$('.search_hide').slideDown()
+			$('.search_hide').css({
+				position: 'fixed',
+				top: 0,
+				zIndex: 9999
+			})
+		} else {
+			$('.search_hide').hide()
 		}
 	})
-	//超级单品结束
+	//固定导航栏结束
+
+	//二维码跟随滚动开始
+	$(window).scroll(() => {
+		$(window).scrollTop() >= 629 ? $('.QR_code').addClass('active') : $('.QR_code').removeClass('active')
+	})
+	//二维码跟随滚动结束
+
+	//倒计时开始
+	let endTim = new Date(2020, 8, 8, 20, 8, 0, 0);
+	let currentTim = Date.now();
+	let resTim = parseInt(endTim - currentTim) / 1000;
+	setInterval(function () {
+		if (resTim > 1) {
+			resTim = resTim - 1;
+			var second = parseInt(resTim % 60);
+			var minute = parseInt((resTim / 60) % 60);
+			var hour = parseInt((resTim / 3600) % 24);
+
+			second = second <= 9 ? "0" + second : second;
+			minute = minute <= 9 ? "0" + minute : minute;
+			hour = hour <= 9 ? "0" + hour : hour;
+
+			$('.timer p').first().html(hour);
+			$('.timer p').eq(1).html(minute);
+			$('.timer p').eq(2).html(second);
+		}
+	}, 1000)
+	//倒计时结束
 })
